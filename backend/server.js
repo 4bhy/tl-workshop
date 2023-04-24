@@ -37,5 +37,7 @@ db.sequelize.sync().then((res) => {
     app.listen(process.env.PORT, () => {
         console.log("Server Running at Port " + process.env.PORT);
     })
+}).catch((err)=>{
+    console.log(err.message);
 })
 

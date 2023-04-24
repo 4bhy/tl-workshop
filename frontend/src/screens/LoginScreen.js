@@ -5,6 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import PingLoading from '../components/PingLoading';
 import { login, register } from '../actions/actions';
 import {Toaster, toast} from 'react-hot-toast'
+import {signInWithPopup, FacebookAuthProvider } from 'firebase/auth'
+import { authentication } from '../firebase-config';
+
 const LoginScreen = () => {
 
     const [selected, setSelected] = useState(true);
@@ -49,6 +52,15 @@ const LoginScreen = () => {
             toast.error(registerError)
         }
     },[registerError])
+
+    const signInWithFacebook=()=>{
+       const provider= new FacebookAuthProvider();
+       signInWithPopup(authentication, provider).then((res)=>{
+        console.log(res);
+       }).catch((err)=>{
+        console.log(error.message);
+       })
+    }
 
     return (
         <>
@@ -209,6 +221,7 @@ const LoginScreen = () => {
                                             </div>
                                             <div className='items-center'>
                                                 <p className='text-violet-600 text-center text-sm -mt-3'>Log In Using</p>
+                                                <button  className="w-full inline-block px-4 py-2 mt-6 text-lg font-medium text-center text-white bg-sky-500 rounded-lg transition duration-200 hover:bg-sky-600 ease" onClick={signInWithFacebook}>FACEBOOK</button>
                                             </div>
                                         </div>
                                     )
