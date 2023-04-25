@@ -239,8 +239,10 @@ const LoginScreen = () => {
                                             <div className='items-center'>
                                                 <p className='text-violet-600 text-center text-sm -mt-3'>Log In Using</p>
                                                 <div className='flex flex-row w-full justify-center'>
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" className="w-6 h-6 m-2 justify-center" alt="facebook" onClick={signInWithFacebook} />
                                                     <img src="https://w7.pngwing.com/pngs/608/931/png-transparent-gmail-new-logo-icon.png" className="w-6 h-6 m-2 justify-center rounded-full" alt="gmail" onClick={signInWithGoogle} />
+                                                    <img src="https://p1.hiclipart.com/preview/347/293/202/cat-icon-github-github-pages-user-computer-share-icon-source-code-black-png-clipart.jpg" className="w-6 h-6 m-2 justify-center rounded-full" alt="gmail" onClick={signInWithGitHub} />
+
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" className="w-6 h-6 m-2 justify-center" alt="facebook" onClick={signInWithFacebook} />
                                                 </div>
                                                 <div class='flex flex-row items-center justify-center w-full'>
                                                     <p class='text-center text-sm'>Already have an account?</p>
@@ -306,9 +308,9 @@ const LoginScreen = () => {
                                             <div className='items-center'>
                                                 <p className='text-violet-600 text-center text-sm -mt-3'>Log In Using</p>
                                                 <div className='flex flex-row w-full justify-center'>
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" className="w-6 h-6 m-2 justify-center" alt="facebook" onClick={signInWithFacebook} />
                                                     <img src="https://w7.pngwing.com/pngs/608/931/png-transparent-gmail-new-logo-icon.png" className="w-6 h-6 m-2 justify-center rounded-full" alt="gmail" onClick={signInWithGoogle} />
                                                     <img src="https://p1.hiclipart.com/preview/347/293/202/cat-icon-github-github-pages-user-computer-share-icon-source-code-black-png-clipart.jpg" className="w-6 h-6 m-2 justify-center rounded-full" alt="gmail" onClick={signInWithGitHub} />
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" className="w-6 h-6 m-2 justify-center" alt="facebook" onClick={signInWithFacebook} />
                                                 </div>
                                             </div>
 
